@@ -16,29 +16,28 @@ Desafio para modelar e diagramar a representação UML do componente iPhone, abr
 - Criar um diagrama UML que represente as funcionalidades descritas acima.
 
 ### Diagrama UML (DRAW.io)
-```draw.io
+```mermaid
 classDiagram
     class FuncaoMusical {
-        + tocar(): void
-        + pausar(): void
-        + selecionarMusica(String musica): void
+        + tocar() void
+        + pausar() void
+        + selecionarMusica(String musica) void
     }
 
     class FuncaoTelefonia {
-        + ligar(String Numero): void
-        + atender(): void
-        + iniciarCorreioVoz(): void
+        + ligar(String Numero) void
+        + atender() void
+        + iniciarCorreioVoz() void
     }
 
     class FuncaoNavegador {
-        + exibirPagina(String url): void
-        + adicionarNovaAba(): void
-        + atualizarPagina(): void
+        + exibirPagina(String url) void
+        + adicionarNovaAba() void
+        + atualizarPagina() void
     }
 
     class iPhone {
     }
-
     iPhone --> FuncaoMusical
     iPhone --> FuncaoTelefonia
     iPhone --> FuncaoNavegador
