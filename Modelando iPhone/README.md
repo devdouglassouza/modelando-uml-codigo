@@ -1,18 +1,47 @@
-## Getting Started
+## Programação Orientada a Objeto - Desafio
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+### Modelagem e Diagramação de um Componente iPhone
 
-## Folder Structure
+Desafio para modelar e diagramar a representação UML do componente iPhone, abrangendo suas funcionalidades como Reprodutor Musical, Aparelho Telefônico e Navegador na Internet.
 
-The workspace contains two folders by default, where:
+#### Funcionalidades a Modelar
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+1. **Reprodutor Musical**
+   - Métodos: `tocar()`, `pausar()`, `selecionarMusica(String musica)`
+2. **Aparelho Telefônico**
+   - Métodos: `ligar(String numero)`, `atender()`, `iniciarCorreioVoz()`
+3. **Navegador na Internet**
+   - Métodos: `exibirPagina(String url)`, `adicionarNovaAba()`, `atualizarPagina()`
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+### Objetivo
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+- Criar um diagrama UML que represente as funcionalidades descritas acima.
 
-## Dependency Management
+### Diagrama UML (DRAW.io)
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+```mermaid
+classDiagram
+    class FuncaoMusical {
+        + tocar() void
+        + pausar() void
+        + selecionarMusica(String musica) void
+    }
+
+    class FuncaoTelefonia {
+        + ligar(String Numero) void
+        + atender() void
+        + iniciarCorreioVoz() void
+    }
+
+    class FuncaoNavegador {
+        + exibirPagina(String url) void
+        + adicionarNovaAba() void
+        + atualizarPagina() void
+    }
+
+    class iPhone {
+    }
+    iPhone --> FuncaoMusical
+    iPhone --> FuncaoTelefonia
+    iPhone --> FuncaoNavegador
+```
